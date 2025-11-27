@@ -656,4 +656,114 @@ p, li, a { color:#fcfcfc; }
   .car-gallery .grid{ grid-template-columns:1fr; }
   .car-thumb img{ height:200px; }
 }
+@media (max-width: 375px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .about-container { flex-direction: column; text-align: center; }
+  .about-image img { max-width: 86%; }
+  .hero { min-height: 480px; }
+  .footer-bottom-inner { flex-direction: column; gap:8px; text-align:center; }
+}
+@media (max-width: 412px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .about-container { flex-direction: column; text-align: center; }
+  .about-image img { max-width: 86%; }
+  .hero { min-height: 480px; }
+  .footer-bottom-inner { flex-direction: column; gap:8px; text-align:center; }
+}
+/* --- Мобильные устройства --- */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+    padding: 0 10px;
+  }
 
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 15px;
+  }
+
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .nav a {
+    font-size: 15px;
+  }
+}
